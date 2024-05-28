@@ -1,18 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Ações</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px 20px;
+        }
+    </style>
 </head>
-<header>
-    <h1>GUIA DO INVESTIDOR</h1>
-</header>
 <body>
-    
+    <div class="container">
+        <h1>Tabuada</h1>
+        <input type="number" id="numero" placeholder="Número">
+        <button onclick="gerarTabuada()">Gerar Tabuada</button>
+        <button onclick="limparTela()">Limpar</button>
+        <div class="result" id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
-<footer>
-    &copy; Angelo albini
-</footer>
 </html>
